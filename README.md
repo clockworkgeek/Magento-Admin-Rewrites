@@ -2,16 +2,19 @@ Admin Rewrites allows you to enable URL rewriting for Magento's admin if the ser
 
 This means URLs that look like this:
 
-    http://www.example.com/index.php/admin/
+    http://www.example.com/index.php/admin/index/index/
 
 Can now look like this instead:
 
     http://www.example.com/admin/
 
-Beware! Incorrect use could lock you out of admin and left unable to reverse the setting.
+**Beware!** Incorrect use could lock you out of admin and left unable to reverse the setting.
 Should this happen you can still reach the Connect Manager by typing it's address directly:
 
     http://www.example.com/downloader/
+
+This extension unfortunately needs to override `Mage_Core_Model_Store` - a very important class in Magento.
+As such it will always be a "beta" release as that usually means "caveat emptor".
 
 To install, get your extension key from [the Connect Marketplace](http://www.magentocommerce.com/magento-connect/admin-rewrites.html).  
 If you wish to edit this code then copy these files to an installed Magento directory, the package XML file is included so it will be available from _System > Magento Connect > Package Extensions > Load Local Package_.
