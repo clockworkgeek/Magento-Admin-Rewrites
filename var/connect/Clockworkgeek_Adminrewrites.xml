@@ -1,5 +1,5 @@
 <_>
-   <form_key>Sf6Q2bAimZgkLwxy</form_key>
+   <form_key>eb6Mntsdy4Bz6UAx</form_key>
    <name>Clockworkgeek_Adminrewrites</name>
    <channel>community</channel>
    <version_ids>
@@ -9,9 +9,9 @@
    <description>Enables URL rewriting for admin which removes &quot;index.php&quot;.</description>
    <license>OSL v3.0</license>
    <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
-   <version>0.1.2</version>
-   <stability>beta</stability>
-   <notes>Tested to Magento 1.6.1</notes>
+   <version>1.0.0</version>
+   <stability>stable</stability>
+   <notes>Tested to Magento 1.9.0.1</notes>
    <authors>
       <name>
          <name>Clockworkgeek</name>
@@ -40,7 +40,7 @@
             <max/>
          </max>
          <files>
-            <files>          </files>
+            <files>               </files>
          </files>
       </package>
       <extension>
