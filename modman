@@ -1,0 +1,4 @@
+app/code/community/Clockworkgeek/Adminrewrites		app/code/community/Clockworkgeek/Adminrewrites
+app/etc/modules/Clockworkgeek_Adminrewrites.xml		app/etc/modules/Clockworkgeek_Adminrewrites.xml
+app/locale/en_US/Clockworkgeek_Adminrewrites.csv	app/locale/en_US/Clockworkgeek_Adminrewrites.csv
+var/connect/Clockworkgeek_Adminrewrites.xml			var/connect/Clockworkgeek_Adminrewrites.xml
