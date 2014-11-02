@@ -46,12 +46,10 @@ class Clockworkgeek_Adminrewrites_Model_Store extends Mage_Core_Model_Store
      */
     protected function _updatePathUseRewrites($url)
     {
-        if (($this->isAdmin() && !($this->getConfig(self::XML_PATH_ADMIN_REWRITES)))
-            || !$this->getConfig(self::XML_PATH_USE_REWRITES)
-            || !Mage::isInstalled()) {
-            $url .= basename($_SERVER['SCRIPT_FILENAME']).'/';
+        if (Mage::isInstalled() && $this->isAdmin() && $this->getConfig(self::XML_PATH_ADMIN_REWRITES)) {
+            return $url;
         }
-        return $url;
+        return call_user_func_array('parent::_updatePathUseRewrites', func_get_args());
     }
 
 }
