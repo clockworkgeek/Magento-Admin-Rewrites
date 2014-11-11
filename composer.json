@@ -9,5 +9,8 @@
       "name":"Daniel Deady",
       "email":"daniel@clockworkgeek.com"
     }
-  ]
+  ],
+  "suggest":{
+    "magento-hackathon/magento-composer-installer":"*"
+  }
 }
