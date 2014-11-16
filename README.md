@@ -13,6 +13,10 @@ Should this happen you can still reach the Connect Manager by typing it's addres
 
     http://www.example.com/downloader/
 
-To install, get your extension key from [the Connect Marketplace](http://www.magentocommerce.com/magento-connect/admin-rewrites.html).  
+To install, get your extension key from [the Connect Marketplace](http://www.magentocommerce.com/magento-connect/admin-rewrites.html) or composer users can enter this command:
+
+    composer config repositories.firegento composer http://packages.firegento.com
+    composer require clockworkgeek/admin-rewrites:dev-master
+
 If you wish to edit this code then copy these files to an installed Magento directory, the package XML file is included so it will be available from _System > Magento Connect > Package Extensions > Load Local Package_.
 You can then update and re-package as necessary.
