@@ -49,6 +49,10 @@ class Clockworkgeek_Adminrewrites_Model_Store extends Mage_Core_Model_Store
         if (Mage::isInstalled() && $this->isAdmin() && $this->getConfig(self::XML_PATH_ADMIN_REWRITES)) {
             return $url;
         }
+        if (version_compare(PHP_VERSION, '5.3.0', '<')) {
+            // before PHP had late static binding we must name the ancestor
+            return Mage_Core_Model_Store::_updatePathUseRewrites($url);
+        }
         return call_user_func_array('parent::_updatePathUseRewrites', func_get_args());
     }
 
